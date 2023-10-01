@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: canopee;
+    src: url(fonts/Canopee\ Regular.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e3d5b8;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: #e3d5b8;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #303030;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav .wrapper {
+    width: 85%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu1 li, .menu2 li{
+    display: inline;
+}
+
+.menu2 li {
+    padding-left: 50px;
+}
+
+.menu1 li {
+    padding-right: 50px;
+}
+
+.logo a {
+    font-family: canopee;
+    font-size: 36px;
+    color: #303030;
+}
+
+.menu1 a, .menu2 a{
+    font-family: 'Staatliches', cursive;
+    color: #303030;
+    font-size: 20px;
+}
+
+/* HOME */
+
+#home {
+    margin: auto;
+    padding: 70px 0 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elem1 {
+    width: 55%;
+    position: relative;
+}
+
+.elem1 h1 {
+    font-size: 64px;
+    font-family: canopee;
+    color: #303030;
+    margin-bottom: 4px;
+    line-height: 88px;
+}
+
+.elem1 h2 {
+    font-size: 32px;
+    font-family: canopee;
+    color: #303030;
+    margin: 60px 0 12px;
+}
+
+.elem1 h1 span {
+    background-color: #303030;
+    color: #e3d5b8;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.elem1 p {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 36px;
+}
+
+.garis1 {
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background-color: #555555;
+    right: 0;
+    top: 75px;
+    border-radius: 50%;
+}
+
+.elem1 button {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #303030;
+    background-color: #e3d5b8;
+    padding: 16px 40px;
+    border: 4px solid #303030;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.elem2 {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px;
+}
+
+.elem2 .wrapper {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.img-home {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 60px 0 8px;
+}
+
+.img-home img{
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.img-home:hover img{
+    scale: 1.2;
+}
+
+.elem2 p {
+    font-family: canopee;
+    font-size: 16px;
+    color: #303030;
+    margin-top: 8px;
+}
+
+.elem2 p span {
+    background-color: #ff4500;
+    color: #fff;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 4px 4px 2px;
+    border-radius: 5px;
+}
+
+.garis2 {
+    height: 3px;
+    width: 77%;
+    background-color: #555555;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 8px;
+    right: 0;
+}
+
+/* ABOUT */
+
+#about {
+    width: 95%;
+    margin-top: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.img-about {
+    border: 1px solid black;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about img {
+    width: 100%;
+}
+
+.para {
+    width: 52%;
+    position: relative;
+}
+
+.para h1 {
+    font-size: 32px;
+    font-family: canopee;
+    color: #303030;
+    margin-bottom: 4px;
+}
+
+.garis3 {
+    height: 3px;
+    width: 85%;
+    background-color: #555555;
+    position: absolute;
+    border-radius: 50%;
+    top: 16px;
+    right: 0;
+}
+
+.para h2 {
+    font-size: 60px;
+    font-family: canopee;
+    color: #303030;
+    margin-bottom: 12px;
+}
+
+.para h2 span {
+    background-color: #303030;
+    color: #e3d5b8;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.para h4 {
+    font-family: canopee;
+    font-size: 16px;
+    color: #303030;
+    margin-bottom: 16px;
+}
+
+.para h4 span {
+    background-color: #ff4500;
+    color: #fff;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 4px 4px 2px;
+    border-radius: 5px;
+}
+
+.para p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 12px;
+}
+
+.para button {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #303030;
+    background-color: #e3d5b8;
+    padding: 16px 24px;
+    border: 2px solid #303030;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* TULISAN GEDE */
+
+.big-teks {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.big-teks h1 {
+    font-family: canopee;
+    font-size: 320px;
+    text-align: center;
+    background-color: #303030;
+    color: #e3d5b8;
+    padding-top: 32px;
+}
+
+/* SKILL */
+
+#skill {
+    width: 95%;
+    margin: auto; 
+    padding-top: 100px;
+}
+
+#skill .title-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.garis-skill {
+    width: 40%;
+    height: 3px;
+    background-color: #303030;
+}
+
+.garis-skill:first-of-type {
+    border-radius: 50% 0 0 50%;
+}
+
+.garis-skill:last-of-type {
+    border-radius: 0 50% 50% 0;
+}
+
+.title-skill .teks {
+    width: 20%;
+}
+
+.title-skill .teks h1 {
+    font-size: 60px;
+    font-family: canopee;
+    color: #303030;
+    text-align: center;
+}
+
+.cards {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.card {
+    width: 280px;
+    height: 330px;
+    border: 3px solid #303030;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #303030;
+}
+
+.card-dashed {
+    width: 250px;
+    height: 300px;
+    border: 3px dashed #303030;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.img-card {
+    width: 90%;
+    margin: 10px auto;
+    height: 120px;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 0 0;
+}
+
+.img-card img {
+    width: 100%;
+}
+
+.card-dashed .teks {
+    width: 90%;
+    margin: auto;
+}
+
+.card-dashed .teks h3 {
+    font-family: canopee;
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: #303030;
+}
+
+.card-dashed .teks p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #303030;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+    width: 95%;
+    margin: auto; 
+    padding-top: 100px;
+}
+
+#portfolio .title-port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.garis-port {
+    width: 35%;
+    height: 3px;
+    background-color: #303030;
+}
+
+.garis-port:first-of-type {
+    border-radius: 50% 0 0 50%;
+}
+
+.garis-port:last-of-type {
+    border-radius: 0 50% 50% 0;
+}
+
+.title-port .teks {
+    width: 30%;
+}
+
+.title-port .teks h1 {
+    font-size: 60px;
+    font-family: canopee;
+    color: #303030;
+    text-align: center;
+}
+
+/* STYLE CARD PORTOFOLIO SAMA SEPERTI CARD SKILL */
+
+/* GALLERY */
+
+#gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.side {
+    width: 30%;
+    background-color: #303030;
+    text-align: center;
+}
+
+.side h1 {
+    color: #e3d5b8;
+    font-family: canopee;
+    font-size: 120px;
+    margin: auto;
+    padding: 340px 0 0;
+}
+
+.side p {
+    color: #e3d5b8;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    padding: 0 24px;
+}
+
+.images {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.image {
+    height: 280px;
+    width: 280px;
+    border: 1px solid #303030;
+    margin: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.image:hover img{
+    scale: 1.2;
+}
+
+/* CONTACT */
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    height: 400px;
+}
+
+.side-kontak {
+    width: 30%;
+    background-color: #303030;
+    text-align: center;
+}
+
+.side-kontak h1 {
+    color: #e3d5b8;
+    font-family: canopee;
+    font-size: 90px;
+    margin: auto;
+    padding: 130px 0 0;
+}
+
+.side-kontak p {
+    color: #e3d5b8;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    padding: 0 24px;
+}
+
+.kontak {
+    display: flex;
+    width: 70%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-kontak {
+    width: 60%;
+}
+
+.wa, .ig, .email {
+    width: 100%;
+    height: 80px;
+    border: 3px solid #303030;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.ig {
+    margin: 20px 0 20px;
+}
+
+.wrapper-kontak h1 {
+    margin: 24px 0;
+    font-family: canopee;
+    font-size: 32px;
+    color: #303030;
+}
+
+.wa:hover, .ig:hover, .email:hover {
+    box-shadow: 1px 1px 8px #303030;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer h1 {
+    font-family: canopee;
+    font-size: 32px;
+    text-align: center;
+    background-color: #303030;
+    color: #e3d5b8;
+    padding: 32px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
